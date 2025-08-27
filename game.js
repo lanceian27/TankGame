@@ -471,7 +471,12 @@ btnBack.addEventListener("click", () => {
 });
 
 
+const ASSET = (name) => `assets/${name}`;
+
+
 
 // Initialize
 resetRound();
 requestAnimationFrame(loop);
+
+
