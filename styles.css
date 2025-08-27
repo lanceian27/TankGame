@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box
+}
+
+body {
+  margin: 0;
+  background: #0e0f12;
+  color: #e7e7ea;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', Arial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+}
+
+.hud {
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.scores {
+  display: flex;
+  gap: 18px;
+  font-size: 18px
+}
+
+.help {
+  opacity: .8;
+  font-size: 14px
+}
+
+canvas {
+  background: #1b1f24;
+  border: 2px solid #3a3f46;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .6);
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.overlay.hidden {
+  display: none
+}
+
+.panel {
+  background: #17191e;
+  border: 2px solid #3a3f46;
+  padding: 20px 24px;
+  border-radius: 12px;
+  min-width: 320px;
+  text-align: center
+}
+
+button {
+  background: #2a2f37;
+  color: #e7e7ea;
+  border: 1px solid #3a3f46;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600
+}
+
+button:hover {
+  background: #343a43
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #2c3e50cc, #3498dbcc);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  z-index: 10;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.overlay h1 {
+  font-size: 60px;
+  text-shadow: 2px 2px 8px #000;
+  margin-bottom: 40px;
+}
+
+.overlay button {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 15px 50px;
+  margin: 15px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #e74c3c, #e67e22);
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.overlay button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+
