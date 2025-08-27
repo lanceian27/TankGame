@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <title>2-Player Tank Battle</title>
+ <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ <div class="hud">
+   <div class="scores">
+     <span>🏆 P1 Wins: <b id="p1Wins">0</b></span>
+     <span>🏆 P2 Wins: <b id="p2Wins">0</b></span>
+   </div>
+   <div class="help">
+     P1: WASD + F (shoot) &nbsp; | &nbsp; P2: Arrow Keys + Enter (shoot) &nbsp; | &nbsp; R = Restart Round
+   </div>
+ </div>
+
+ <div id="menuOverlay" class="overlay">
+  <h1>Tank Battle</h1>
+  <button id="btnStart">Start Game</button>
+  <button class="small-btn" id="btnSettings">Settings</button>
+</div>
+
+
+
+ <canvas id="game" width="1280" height="750"></canvas>
+
+
+
+ <div id="overlay" class="overlay hidden">
+   <div class="panel">
+     <h2 id="resultTitle"></h2>
+     <p id="resultSub"></p>
+     <button id="btnRestart">Next Round</button>
+     <button id="btnResetMatch">Reset Match</button>
+   </div>
+ </div>
+
+ <div id="settingsOverlay" class="overlay hidden">
+  <h1>Settings</h1>
+  <p>Lance Gwapo</p>
+  <button id="btnBack">Back</button>
+</div>
+
+
+ <script src="game.js"></script>
+</body>
+</html>
